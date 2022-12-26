@@ -1,0 +1,128 @@
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  color: #000;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  z-index: 210;
+  border-bottom: 1px solid #ebebeb;
+  background: #fff;
+}
+
+#header .inner {
+  max-width: 1440px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+}
+
+#header .inner .gnb a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+#header .logo {
+  position: relative;
+  display: flex;
+  height: 100%;
+  margin-right: 50px;
+  white-space: nowrap;
+  align-items: center;
+  flex: none;
+}
+
+#header .logo::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#header .logo img {
+  height: 16px;
+  vertical-align: middle;
+}
+
+#header .gnb {
+}
+
+#header .gnb ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+
+#header .gnb ul li {
+  display: flex;
+  padding: 25px 0 23px;
+  height: 100%;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+#header .gnb ul li a {
+  position: relative;
+  display: block;
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+  padding: 9px 7px;
+  border-radius: 20px;
+}
+#header .gnb ul li.blank {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+#header .gnb a.outlink:after {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  margin-top: -3px;
+  margin-left: 5px;
+  vertical-align: middle;
+  background: 
+    url(/images/icon-outlink.svg),
+    url(/images/icon-16-midium-link-white.svg) no-repeat center center;
+}
+
+#header .header-right {
+  position: relative;
+  display: flex;
+  right: 0;
+  height: 100%;
+  margin-right: -12px;
+  white-space: nowrap;
+}
+#header .header-right ul li {
+  display: inline-block;
+  height: 100%;
+  padding: 0 12px 0 13px;
+  vertical-align: middle;
+}
+#header .header-right ul li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  line-height: 80px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#header .header-right ul li img {
+  width: 23px;
+  height: 23px;
+}
