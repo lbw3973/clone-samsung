@@ -1,128 +1,200 @@
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  color: #000;
-  text-decoration: none;
-  vertical-align: baseline;
-  background: transparent;
+@import url(//db.onlinewebfonts.com/c/05c77f210065b750f9ad9d606be229d2?family=SamsungOne);
+@font-face {font-family: "SamsungOne"; src: url("//db.onlinewebfonts.com/t/05c77f210065b750f9ad9d606be229d2.eot"); src: url("//db.onlinewebfonts.com/t/05c77f210065b750f9ad9d606be229d2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/05c77f210065b750f9ad9d606be229d2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/05c77f210065b750f9ad9d606be229d2.woff") format("woff"), url("//db.onlinewebfonts.com/t/05c77f210065b750f9ad9d606be229d2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/05c77f210065b750f9ad9d606be229d2.svg#SamsungOne") format("svg"); }
+/* COMMON
+body {
+  color: black;
+  font-size: 12px;
+}
+.inner .logo img {
+  display: block;
+  width: 110px;
+}
+.inner .main-menu .menu-icons img {
+  display: block;
+  width: 20px;
 }
 
-#header {
-  position: relative;
-  width: 100%;
-  z-index: 210;
-  border-bottom: 1px solid #ebebeb;
-  background: #fff;
+header {
 }
-
-#header .inner {
-  max-width: 1440px;
+header .inner {
+  width: 1440px;
   height: 80px;
   margin: 0 auto;
-  padding: 0 24px;
+  position: relative;
+}
+header .logo {
+  height: 12px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+header .main-menu {
+  position: relative;
+  height: 22px;
+  top: 25px;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: -15px;
+}
+header .main-menu ul.menu {
+  display: flex;
+  justify-content: center;
+  
+}
+header .main-menu ul.menu li {
+  font-weight: bold;
+  border: 1px solid red;
+}
+header .main-menu ul.menu li.item a {
+  font-size: 12px;
+  padding: 11px 7px;
+  display: block;
+  color: #000;
+  position: relative;
+}
+header .main-menu ul.menu li.outlink {
   display: flex;
 }
-
-#header .inner .gnb a:hover {
+header .main-menu ul.menu li.outlink a {
+  display: flex;
+  padding: 11px 7px;
+}
+header .main-menu ul.menu li.outlink:hover {
   color: #fff;
   background-color: #000;
-}
-
-#header .logo {
-  position: relative;
-  display: flex;
-  height: 100%;
-  margin-right: 50px;
-  white-space: nowrap;
-  align-items: center;
-  flex: none;
-}
-
-#header .logo::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-#header .logo img {
-  height: 16px;
-  vertical-align: middle;
-}
-
-#header .gnb {
-}
-
-#header .gnb ul {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  height: 100%;
-}
-
-#header .gnb ul li {
-  display: flex;
-  padding: 25px 0 23px;
-  height: 100%;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-#header .gnb ul li a {
-  position: relative;
-  display: block;
-  font-size: 12px;
-  color: #000;
-  font-weight: bold;
-  padding: 9px 7px;
   border-radius: 20px;
 }
-#header .gnb ul li.blank {
-  display: block;
-  width: 100%;
-  padding: 0;
+header .main-menu ul.menu li a:hover {
+  color: #fff;
+  background-color: #000;
+  border-radius: 50px;
 }
-
-#header .gnb a.outlink:after {
-  content: "";
-  display: inline-block;
-  width: 13px;
-  height: 12px;
-  margin-top: -3px;
-  margin-left: 5px;
-  vertical-align: middle;
-  background: 
-    url(/images/icon-outlink.svg),
-    url(/images/icon-16-midium-link-white.svg) no-repeat center center;
+header .main-menu ul.menu li.blank {
+  width: 260px;
 }
-
-#header .header-right {
-  position: relative;
+header .main-menu .menu-icons {
   display: flex;
+  position: absolute;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  height: 14px;
+  top: 0;
+  bottom: 0;
   right: 0;
-  height: 100%;
-  margin-right: -12px;
-  white-space: nowrap;
+  margin: auto;
 }
-#header .header-right ul li {
-  display: inline-block;
-  height: 100%;
-  padding: 0 12px 0 13px;
-  vertical-align: middle;
-}
-#header .header-right ul li a {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  line-height: 80px;
-  font-size: 16px;
-  color: #000;
-  font-weight: bold;
-  vertical-align: middle;
+header .main-menu .menu-icons li {
+  margin: auto 10px;
 }
 
-#header .header-right ul li img {
-  width: 23px;
-  height: 23px;
+header .main-menu .menu .item__contents {
+  height: 200px;
+  background-color: orange;
+} */
+body {
+  color: black;
+  font-size: 12px;
+  font-family: Dotum, 'µ¸¿ò', sans-serif;
+}
+img {
+
+}
+.inner {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.inner .logo img {
+
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  /* border: 1px solid black; */
+}
+header > .inner {
+  /* display: flex; */
+  height: 80px;
+}
+header .logo {
+  height: 15px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+header .main-menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  /* white-space: nowrap; */
+}
+
+header .main-menu .item {
+  font-weight: 700;
+}
+header .main-menu .item .item__name { 
+  padding: 7px 7px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+header .main-menu .item a { 
+  display: block;
+  width: 20px;
+  height: 100%;
+  margin: 0 10px 0 10px;
+}
+header .main-menu .item:hover .item__name { 
+  color: #fff;
+  background-color: #000;
+  border-radius: 50px;
+  cursor: pointer;
+}
+header .main-menu .item .item__contents { 
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+  transition: 0.5s;
+}
+header .main-menu .item:hover .item__contents {
+  display: block;
+}
+header .main-menu .item .item__contents .contents__menu { 
+  /* background-color: red; */
+  height: 200px;
+}
+header .main-menu .item .item__contents .contents__menu > ul { 
+  display: flex;
+  padding: 20px 0;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li { 
+  width: 220px;
+  background-color: royalblue;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+header .main-menu .item .item__contents .contents__texture { 
+  background-color: orange;
+  height: 100px;
+}
+
+header .main-menu li.blank {
+  display: block;
+  width: 350px;
+  padding: 0;
 }
