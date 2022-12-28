@@ -140,10 +140,13 @@ section .container .item-slider .item-image {
 
 } */
 section .swiper {
+  max-width: 1920px;
+}
+section .swiper .swiper-wrapper {
   position: relative;
 }
 section .swiper .slider-control {
-
+  position: relative;
 }
 section .swiper .slider-control .slider-control-items {
   display: grid;
@@ -152,20 +155,22 @@ section .swiper .slider-control .slider-control-items {
   align-items: end;
   position: absolute;
   white-space: nowrap;
-  bottom: 15%;
-  left: 50%;
-  right: 50%;
+  bottom: 50px;
+  left: 0;
+  right: 0;
   z-index: 10;
-  gap: 1px;
-  font-size: 12px;
+  gap: 15px;
+  font-size: 13px;
   font-weight: 700;
   flex-grow: 1;
 }
 section .swiper .slider-control .slider-control-items li {
   /* border: 1px solid; */
-  padding: 10px;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 2px solid #0000004d;
   text-align: center;
   display: inline-block;
+  cursor: pointer;
 }
 
 section .promotion {
@@ -184,6 +189,7 @@ section .promotion .title ul {
 }
 section .promotion .title ul li {
   padding: 0 20px;
+  cursor: pointer;
 }
 section .promotion .title ul li:hover {
   text-decoration: underline;
@@ -232,4 +238,79 @@ section .promotion .container .item .price {
   text-align: center;
   font-size: 13px;
   padding: 12px 0;
+}
+
+section .b2c .container {
+  position: relative;
+  color: white;
+}
+section .b2c .container .item-image {
+  text-align: center;
+}
+section .b2c .container .item-title {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  z-index: 10;
+}
+section .b2c .container .item-subtitle {
+  position: absolute;
+  top: 99px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+section .b2c .container .item-subtitle ul {
+  display: flex;
+  justify-content: center;
+  top: 99px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  gap: 25px;
+  line-height: 24px;
+}
+section .b2c .container .item-subtitle ul li { 
+  cursor: pointer;
+}
+section .b2c .container .item-subtitle ul li:hover {
+  border-bottom: 2px solid white;
+}
+
+section .b2c .container .item-content { 
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 45px;
+  text-align: center;
+  z-index: 10;
+}
+section .b2c .container .item-content .title {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 1.2;
+}
+section .b2c .container .item-content .content {
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 1.33;
+}
+section .b2c .container .item-content .btn {
+  margin-top: 30px;
+}
+section .b2c .container .item-content .btn p {
+  display: inline-block;
+  padding: 13px 24px;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
 }
