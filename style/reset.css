@@ -13,7 +13,7 @@ article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary, button,
 time, mark, audio, video {
     margin:0; padding:0; border:0; outline:0; letter-spacing:-0.02em;
-    font-family: Dotum, '돋움', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     vertical-align:baseline; background:transparent; word-break: keep-all; /* keep-all 정은정프로 요청사항 */box-sizing: border-box;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }

@@ -99,7 +99,7 @@ header .main-menu .item .item__contents .contents__texture {
 
 header .main-menu li.blank {
   display: block;
-  width: 300px;
+  width: 280px;
   padding: 0;
 }
 
@@ -139,13 +139,41 @@ section .container .item-slider .btn-next {
 section .container .item-slider .item-image {
 
 } */
+section .swiper {
+  position: relative;
+}
+section .swiper .slider-control {
+
+}
+section .swiper .slider-control .slider-control-items {
+  display: grid;
+  grid-template-columns: repeat(9,130px);
+  justify-content: center;
+  align-items: end;
+  position: absolute;
+  white-space: nowrap;
+  bottom: 15%;
+  left: 50%;
+  right: 50%;
+  z-index: 10;
+  gap: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+section .swiper .slider-control .slider-control-items li {
+  /* border: 1px solid; */
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
 section .promotion {
   margin: 0 60px;
   padding: 40px;
 }
 
 section .promotion .title {
-  font-family: 'Nanum Gothic', sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
@@ -157,12 +185,14 @@ section .promotion .title ul {
 section .promotion .title ul li {
   padding: 0 20px;
 }
+section .promotion .title ul li:hover {
+  text-decoration: underline;
+}
 section .promotion .container {
   display: grid;
   grid-template-columns: repeat(4,350px);
   grid-template-rows: repeat(2, 350px);
   justify-content: center;
-  /* align-items: center; */
   margin-top: 20px;
   gap: 20px;
 }
