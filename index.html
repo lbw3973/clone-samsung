@@ -30,8 +30,14 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Lodash -->
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
   
-  <script defet src="js/main.js"></script>
+  <!-- GSAP & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -222,12 +228,21 @@
 
 
 
-  <!-- visual -->
+  <!-- VISUAL -->
   <section class="visual">
+
+    <!-- SWIPER -->
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="images/Reward.jpg" alt="중고가전 추가보상">
+          <div class="inner">
+            <div class="inner-text">
+              <div class="box-title">
+                <!-- <h2>HAPPY NEW YEAR</h2> -->
+              </div>
+            </div>
+          </div>
         </div>
         <div class="swiper-slide">
           <img src="images/ThunderSale.jpg" alt="번개특가">
@@ -236,7 +251,7 @@
           <img src="images/Z-Flip4.jpg" alt="갤럭시 Z폴드4 | Z플립4">
         </div>
         <div class="swiper-slide">
-          <img src="images/TVBigsale.png" alt="삼성 TV 빅 세일">
+          <img src="images/TVBigsale.jpg" alt="삼성 TV 빅 세일">
         </div>
         <div class="swiper-slide">
           <img src="images/Gift.jpg" alt="선물하기">
@@ -253,10 +268,13 @@
         <div class="swiper-slide">
           <img src="images/SmartThings.jpg" alt="스마트싱스">
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination swiper-pagination-white"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+      
       <div class="slider-control">
         <ul class="slider-control-items">
           <li>중고가전 추가보상</li>
@@ -272,6 +290,7 @@
       </div>
     </div>
 
+    <!-- PROMOTION -->
     <div class="promotion">
       <div class="title">
         <ul class="p">
@@ -349,6 +368,8 @@
         </div>
       </div>
     </div>
+
+    <!-- B2C -->
     <div class="b2c">
       <div class="container">
         <div class="item-image">
@@ -372,8 +393,80 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="item-image">
+          <img src="images/visual-b2c-QLEDTV.jpg" alt="Neo QLED TV">
+        </div>
+        <h2 class="item-title">TV & 오디오</h2>
+        <div class="item-subtitle">
+          <ul>
+            <li>Neo QLED</li>
+            <li>The Freestyle</li>
+            <li>오디세이 OLED G8</li>
+            <li>Q시리즈 사운드바</li>
+            <li>나에게 맞는 TV 찾기</li>
+          </ul>
+        </div>
+        <div class="item-content">
+          <p class="title">Neo QLED</p>
+          <p class="content">Global No.1이 만든 새로운 화질의 시작</p>
+          <div class="btn">
+            <p class="etc">더 알아보기</p>
+            <p>제품 모두 보기</p>
+          </div>
+        </div>
+      </div>
+      <div class="container container-black">
+        <div class="item-image">
+          <img src="images/visual-b2c-christmas.jpg" alt="X-mas Tree">
+        </div>
+        <h2 class="item-title">가전</h2>
+        <div class="item-subtitle">
+          <ul>
+            <li>BESPOKE HOME</li>
+            <li>BESPOLE 냉장고 | 김치냉장고</li>
+            <li>BESPOKE 냉장고 Infinite Line</li>
+            <li>온라인 체험존</li>
+          </ul>
+        </div>
+        <div class="item-content">
+          <p class="title">BESPOKE HOME</p>
+          <p class="content">우리집을 비스포크하다</p>
+          <div class="btn">
+            <p class="etc">조립하여 구매하기</p>
+            <p>더 알아보기</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- EXPO -->
+      <div class="container">
+        <div class="item-image">
+          <img src="images/visual-b2c-EXPO.jpg" alt="부산 엑스포">
+        </div>
+          <h2 class="expo-title">
+            대한민국 첫번째 월드 엑스포<br>
+            2030부산세계박람회<br>
+            유치를 위해 삼성이 함께 뛰겠습니다
+          </h2>
+        <div class="expo-content">
+          <p class="expo-etc">
+            2032년 12월 개최도시 결정
+          </p>
+        </div>
+        <div class="expo-btn">
+          <p>영상보기</p>
+        </div>
+      </div>
     </div>
+
   </section>
+
+  <div id="to-top">
+    <img src="images/btn-gotop.png" alt="위로 올리기">
+  </div>
+
+
 </body>
 
 </html>

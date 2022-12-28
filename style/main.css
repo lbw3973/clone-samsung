@@ -144,6 +144,28 @@ section .swiper {
 }
 section .swiper .swiper-wrapper {
   position: relative;
+
+}
+section .swiper .swiper-wrapper .swiper-slide {
+
+}
+section .swiper .swiper-wrapper .swiper-slide .inner {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 8vw;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner .inner-text {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+  font-size: 1.111vw;
+  border: 5px solid red;
+  box-sizing: border-box;
 }
 section .swiper .slider-control {
   position: relative;
@@ -165,14 +187,16 @@ section .swiper .slider-control .slider-control-items {
   flex-grow: 1;
 }
 section .swiper .slider-control .slider-control-items li {
-  /* border: 1px solid; */
   padding: 0px 0px 10px 0px;
   border-bottom: 2px solid #0000004d;
   text-align: center;
   display: inline-block;
   cursor: pointer;
+  transition: border 1s ease;
 }
-
+section .swiper .slider-control .slider-control-items li:hover {
+  border-bottom: 2px solid black;
+}
 section .promotion {
   margin: 0 60px;
   padding: 40px;
@@ -186,13 +210,17 @@ section .promotion .title ul {
   display: flex;
   justify-content: center;
   padding: 0 24px 36px;
+  gap: 40px;
 }
 section .promotion .title ul li {
-  padding: 0 20px;
+  padding: 5px 0px;
+  margin: 5px 0px;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 section .promotion .title ul li:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid black;
 }
 section .promotion .container {
   display: grid;
@@ -309,8 +337,96 @@ section .b2c .container .item-content .btn p {
   padding: 13px 24px;
   color: black;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   background-color: white;
   border-radius: 20px;
   cursor: pointer;
+  margin-left: 30px;
+}
+section .b2c .container .item-content .btn p.etc {
+  color: white;
+  background-color: transparent;
+  border-bottom: 2px solid;
+  border-radius: 0;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  padding: 13px 0px 3px 0px;
+}
+section .b2c .container-black {
+  color: black;
+}
+section .b2c .container-black .item-content .btn p {
+  display: inline-block;
+  padding: 13px 24px;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+section .b2c .container-black .item-content .btn p.etc {
+  color: black;
+  background-color: transparent;
+  border-bottom: 2px solid;
+  border-radius: 0;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  padding: 13px 0px 3px 0px;
+}
+section .b2c .container .expo-title {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.4;
+  z-index: 10;
+}
+section .b2c .container .expo-content {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+}
+section .b2c .container .expo-content .expo-etc {
+  letter-spacing: -2px;
+}
+section .b2c .container .expo-btn {
+  position: absolute;
+  top: 370px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+section .b2c .container .expo-btn p {
+  display: inline-block;
+  color: black;
+  padding: 13px 23px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+#to-top {
+  width: 54px;
+  height: 54px;
+  background-color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 37px;
+  z-index: 15;
 }
