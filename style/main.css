@@ -492,6 +492,38 @@ section .trend .trend-list .trend-item {
   margin-bottom: 60px;
   padding: 0 12px;
 }
+section .trend .trend-list .trend-item .visual img {
+  border-radius: 20px;
+  cursor: pointer;
+}
+section .trend .trend-list .trend-item .detail {
+  padding: 24px 24px 0;
+}
+section .trend .trend-list .trend-item .detail p.type {
+  font-size: 15px;
+}
+section .trend .trend-list .trend-item .detail p.title {
+  margin-top: 6px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: bold;
+}
+section .trend .trend-list .trend-item .detail p.content {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #707070;
+}
+
+
+section .trend .trend-list .trend-item .detial .out-link::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-outlink.svg) no-repeat center center;
+  background-size: 100% auto;
+}
 
 /* FLOATING */
 .floatingSticky .menu-list {
@@ -554,6 +586,7 @@ footer .footer-content .footer-inner > ul > li > ul > li {
   padding: 10px 0;
   line-height: 1;
   font-size: 14px;
+  cursor: pointer;
 }
 
 footer .footer-content .footer-inner > ul > li > ul > li > a.out-link::after {
