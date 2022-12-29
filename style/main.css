@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+html {
+  --swiper-theme-color: black !important;
+}
 body {
   color: black;
   font-size: 13px;
@@ -151,21 +154,62 @@ section .swiper .swiper-wrapper .swiper-slide {
 }
 section .swiper .swiper-wrapper .swiper-slide .inner {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 12%;
   right: 0;
-  padding: 0 8vw;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner-white {
+  color: white;
 }
 section .swiper .swiper-wrapper .swiper-slide .inner .inner-text {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  width: 100%;
-  font-size: 1.111vw;
-  border: 5px solid red;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  gap: 50px;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner .inner-text .box-title {
+  font-weight: bold;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner .inner-text .box-title .title {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner .inner-text .box-title .content {
+  font-size: 48px;
+  line-height: 1.2;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner .inner-text .box-title p {
+  font-size: 16px;
+  margin: 30px 0 0;
+  line-height: 1.8;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner .inner-text .box-button ul {
+  font-weight: 600;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner .inner-text .box-button ul .underline{
+  padding-bottom: 5px;
+  border-bottom: 2px solid;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner .inner-text .box-button ul .round {
+  background-color: black;
+  color: white;
+  padding: 14px 23px;
+  border-radius: 50px;
+}
+section .swiper .swiper-wrapper .swiper-slide .inner-white .inner-text .box-button ul .round{
+  background-color: white;
+  color: black;
 }
 section .swiper .slider-control {
   position: relative;
@@ -416,9 +460,30 @@ section .b2c .container .expo-btn p {
 }
 
 
+.floatingSticky .menu-list {
+  width: 64px;
+  height: 64px;
+  background-image: url(../images/Floating_plusBG.png);
+  background-size: cover;
+  position: fixed;
+  right: 33px;
+  bottom: 36px;
+  border-radius: 50px;
+  z-index: 1;
+}
+.floatingSticky .menu-list span {
+  position: relative;
+  display: block;
+  height: 100%;
+  font-size: 0;
+  background-image: url(../images/Floating__plus.png);
+  background-size: cover;
+  z-index: 3;
+}
+
 #to-top {
-  width: 54px;
-  height: 54px;
+  width: 64px;
+  height: 64px;
   background-color: black;
   border-radius: 4px;
   cursor: pointer;
@@ -426,7 +491,7 @@ section .b2c .container .expo-btn p {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 20px;
-  right: 37px;
+  bottom: 26px;
+  right: 33px;
   z-index: 15;
 }
