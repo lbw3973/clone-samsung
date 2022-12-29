@@ -27,7 +27,7 @@ window.addEventListener('scroll', _.throttle(function(){
     // 버튼 보이기!
   // gsap.to(요소, 지속시간, 옵션);
     gsap.to(toTopEl, 0, {
-      x: 0
+      x: -132
     });
     gsap.to(menu, 0, {
       y: -80
@@ -36,10 +36,10 @@ window.addEventListener('scroll', _.throttle(function(){
   else{
     // 버튼 숨기기!
     gsap.to(toTopEl, 0, {
-      x: 200
+      x: 100
     });
     gsap.to(menu, 0, {
-      y: 0
+      y: -0
     });
   }
 }, 300));
